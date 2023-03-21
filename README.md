@@ -6,4 +6,6 @@ The main task is implement and benchmark different algorithms for "Image restora
 
 *Non-uniform kernel is used in this approach to deblur photos*
 
-'python kernel' 
+`kernel raznos` 
+
+dsdasda
