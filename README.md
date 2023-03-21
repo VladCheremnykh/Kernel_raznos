@@ -6,6 +6,7 @@ The main task is implement and benchmark different algorithms for "Image restora
 In this repository you can check the results of our study.
 Report.pdf depicts scientific format of our report, while "presentation.pdf" shows our team presentation
 
+To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9bmbD7OdSE-DOcadRlaeC3xECUwOMFZgw-Q/edit#gid=0)
 
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
