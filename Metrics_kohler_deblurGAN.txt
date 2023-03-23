@@ -14,10 +14,10 @@ blurred_1_11 PSNR =  / mean_val =  /
 blurred_1_12 PSNR =  / mean_val =  /
 
 blurred_2_1 PSNR = 21.5938 / mean_val = 21.3023 / MSSIM = 
-blurred_2_2 PSNR = 25.0988 / mean_val = 24.6095 / MSSIM = 
-blurred_2_3 PSNR = 29.6699 / mean_val = 28.0170 / MSSIM = 
-blurred_2_4 PSNR = 25.3283 / mean_val = 24.5991 / MSSIM = 
-blurred_2_5 PSNR =  / mean_val =  / MSSIM = 
+blurred_2_2 PSNR = 25.0988 / mean_val = 24.6095 / MSSIM = 0.9216
+blurred_2_3 PSNR = 29.6699 / mean_val = 28.0170 / MSSIM = 0.9793
+blurred_2_4 PSNR = 25.3283 / mean_val = 24.5991 / MSSIM = 0.9287
+blurred_2_5 PSNR = 20.8712 / mean_val = 20.5931 / MSSIM = 0.7627
 
 blurred_3_1 PSNR = 26.9715 / mean_val = 26.3152 / MSSIM = 0.8491
 blurred_3_2 PSNR = 29.6059 / mean_val = 29.1284 / MSSIM = 0.9129
