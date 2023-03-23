@@ -1,10 +1,10 @@
 Kohler-DeblurGAN
 
-blurred_1_1 PSNR =  / mean_val =  / MSSIM = 
-blurred_1_2 PSNR =  / mean_val =  / MSSIM = 
-blurred_1_3 PSNR =  / mean_val =  / MSSIM =
-blurred_1_4 PSNR =  / mean_val =  / MSSIM = 
-blurred_1_5 PSNR =  / mean_val =  / MSSIM = 
+blurred_1_1 PSNR = 26.9782 / mean_val = 26.7249 / MSSIM = 0.8258
+blurred_1_2 PSNR = 30.0039 / mean_val = 29.2371 / MSSIM = 0.9111
+blurred_1_3 PSNR = 34.8461 / mean_val = 33.7341 / MSSIM = 0.9783
+blurred_1_4 PSNR = 29.7265 / mean_val = 29.2565 / MSSIM = 0.9176
+blurred_1_5 PSNR = 26.2198 / mean_val = 25.9819 / MSSIM = 0.7833
 blurred_1_6 PSNR =  / mean_val =  /
 blurred_1_7 PSNR =  / mean_val =  /
 blurred_1_8 PSNR =  / mean_val =  /
