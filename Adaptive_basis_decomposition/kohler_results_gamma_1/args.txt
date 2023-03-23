@@ -1,0 +1,19 @@
+{
+  "blurry_images": "/home/vlad/ML_project/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition/imgs/list.txt",
+  "reblur_model": "/home/vlad/ML_project/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition/models/TwoHeads.pkl",
+  "n_iters": 30,
+  "K": 25,
+  "blur_kernel_size": 33,
+  "gpu_id": 0,
+  "output_folder": "results",
+  "resize_factor": 1,
+  "saturation_method": "combined",
+  "regularization": null,
+  "reg_factor": 0.001,
+  "sat_threshold": 0.99,
+  "gamma_factor": 1.0,
+  "optim_iters": true,
+  "smoothing": true,
+  "erosion": true,
+  "dilation": false
+}
