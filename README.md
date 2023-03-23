@@ -8,6 +8,13 @@ Report.pdf depicts scientific format of our report, while "presentation.pdf" sho
 
 To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9bmbD7OdSE-DOcadRlaeC3xECUwOMFZgw-Q/edit#gid=0)
 
+References: 
+1. [Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition](src="Docs/AdaptiveBasisDecomposition.pdf")
+2. [DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks](src="Docs/DeblurGAN_paper.pdf")
+
+
+
+
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
 
