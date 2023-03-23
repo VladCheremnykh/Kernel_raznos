@@ -95,3 +95,6 @@ https://drive.google.com/file/d/1vGiqFXa177sCGHEuKhDKQ0VxvZZ2qpZg
 ### **Model trained from scratch by our team**
 
 "here"
+
+
+Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
