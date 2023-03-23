@@ -1,0 +1,32 @@
+Kohler-nonuniform-gamma-1
+
+blurred_1_1 PSNR = 34.4715 / mean_val = 33.0255 / MSSIM = 0.9729
+blurred_1_2 PSNR = 33.3090 / mean_val = 31.7925 / MSSIM = 0.9619
+blurred_1_3 PSNR = 39.0624 / mean_val = 31.7925 / MSSIM = 0.9929
+blurred_1_4 PSNR = 35.4007 / mean_val = 33.9852 / MSSIM = 0.9789
+blurred_1_5 PSNR = 30.8150 / mean_val = 29.9909 / MSSIM = 0.9366
+blurred_1_6 PSNR = 32.5687 / mean_val = 31.9140 /
+blurred_1_7 PSNR = 31.2236 / mean_val = 30.6138 /
+blurred_1_8 PSNR = 22.1457 / mean_val = 21.8271 /
+blurred_1_9 PSNR = 23.6229 / mean_val = 23.2086 /
+blurred_1_10 PSNR = 23.3792 / mean_val = 22.9801 /
+blurred_1_11 PSNR = 25.9029 / mean_val = 25.5692 /
+blurred_1_12 PSNR = 31.6192 / mean_val = 30.5866 /
+
+blurred_2_1 PSNR = 29.0408 / mean_val = 26.8401 / MSSIM = 0.9693
+blurred_2_2 PSNR = 28.5022 / mean_val = 27.1846 / MSSIM = 0.9700
+blurred_2_3 PSNR = 30.9713 / mean_val = 28.7800 / MSSIM = 0.9879
+blurred_2_4 PSNR = 29.7997 / mean_val = 27.1711 / MSSIM = 0.9792
+blurred_2_5 PSNR = 25.3089 / mean_val = 24.4178 / MSSIM = 0.9229
+
+blurred_3_1 PSNR = 34.0090 / mean_val = 32.7531 / MSSIM = 0.9718
+blurred_3_2 PSNR = 32.7810 / mean_val = 31.8863 / MSSIM = 0.9626
+blurred_3_3 PSNR = 38.3340 / mean_val = 35.9423 / MSSIM = 0.9914
+blurred_3_4 PSNR = 35.2137 / mean_val = 34.0145 / MSSIM = 0.9788
+blurred_3_5 PSNR = 34.6156 / mean_val = 30.1233 / MSSIM = 0.9525
+
+blurred_4_1 PSNR = 30.0167 / mean_val = 28.2586 / MSSIM = 0.9697
+blurred_4_2 PSNR = 28.5263 / mean_val = 27.7888 / MSSIM = 0.9519
+blurred_4_3 PSNR = 32.2427 / mean_val = 30.0469 / MSSIM = 0.9872
+blurred_4_4 PSNR = 30.5306 / mean_val = 28.6223 / MSSIM = 0.9707
+blurred_4_5 PSNR = 34.1265 / mean_val = / MSSIM = 0.9384
