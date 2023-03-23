@@ -18,15 +18,36 @@ blurred_2_2 PSNR = 28.5022 / mean_val = 27.1846 / MSSIM = 0.9700
 blurred_2_3 PSNR = 30.9713 / mean_val = 28.7800 / MSSIM = 0.9879
 blurred_2_4 PSNR = 29.7997 / mean_val = 27.1711 / MSSIM = 0.9792
 blurred_2_5 PSNR = 25.3089 / mean_val = 24.4178 / MSSIM = 0.9229
+blurred_2_6 PSNR = 21.9052 / mean_val = 21.5930 /
+blurred_2_7 PSNR = 21.9291 / mean_val = 21.7288 /
+blurred_2_8 PSNR = 16.4354 / mean_val = 16.1504 /
+blurred_2_9 PSNR = 17.0219 / mean_val = 16.6406 /
+blurred_2_10 PSNR = 17.2748 / mean_val = 17.0440 /
+blurred_2_11 PSNR = 19.5994 / mean_val = 19.3096 /
+blurred_2_12 PSNR = 20.2609 / mean_val = 20.0333 /
 
 blurred_3_1 PSNR = 34.0090 / mean_val = 32.7531 / MSSIM = 0.9718
 blurred_3_2 PSNR = 32.7810 / mean_val = 31.8863 / MSSIM = 0.9626
 blurred_3_3 PSNR = 38.3340 / mean_val = 35.9423 / MSSIM = 0.9914
 blurred_3_4 PSNR = 35.2137 / mean_val = 34.0145 / MSSIM = 0.9788
 blurred_3_5 PSNR = 34.6156 / mean_val = 30.1233 / MSSIM = 0.9525
+blurred_3_6 PSNR = 28.3039 / mean_val = 27.5284 /
+blurred_3_7 PSNR = 28.2070 / mean_val = 27.3049 /
+blurred_3_8 PSNR = 22.3944 / mean_val = 21.3171 /
+blurred_3_9 PSNR = 21.7338 / mean_val = 20.7212 /
+blurred_3_10 PSNR = 23.4249 / mean_val = 22.3134 /
+blurred_3_11 PSNR = 26.1608 / mean_val = 24.7347 /
+blurred_3_12 PSNR = 26.2988 / mean_val = 25.3521 /
 
 blurred_4_1 PSNR = 30.0167 / mean_val = 28.2586 / MSSIM = 0.9697
 blurred_4_2 PSNR = 28.5263 / mean_val = 27.7888 / MSSIM = 0.9519
 blurred_4_3 PSNR = 32.2427 / mean_val = 30.0469 / MSSIM = 0.9872
 blurred_4_4 PSNR = 30.5306 / mean_val = 28.6223 / MSSIM = 0.9707
-blurred_4_5 PSNR = 34.1265 / mean_val = / MSSIM = 0.9384
+blurred_4_5 PSNR = 34.1265 / mean_val =         / MSSIM = 0.9384
+blurred_4_6 PSNR = 23.0994 / mean_val = 22.6951 /
+blurred_4_7 PSNR = 22.4389 / mean_val = 22.0432 /
+blurred_4_8 PSNR = 17.2762 / mean_val = 16.5657 /
+blurred_4_9 PSNR = 17.9943 / mean_val = 17.3945  /
+blurred_4_10 PSNR = 18.0906 / mean_val = 17.5465 /
+blurred_4_11 PSNR = 20.2898 / mean_val = 19.7042 /
+blurred_4_12 PSNR = 21.8370 / mean_val = 21.2716 /
