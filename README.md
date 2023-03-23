@@ -103,5 +103,6 @@ https://drive.google.com/file/d/1vGiqFXa177sCGHEuKhDKQ0VxvZZ2qpZg
 
 "here"
 
-
+### Metric evaluation
+Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
 Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
