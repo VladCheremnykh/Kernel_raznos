@@ -23,13 +23,13 @@ References:
 <p align="center">
   <img width="300" src="Docs/DGAN_deblur1.png?raw=true">
   <br>
-  <strong>Deblurred Image using Deep Generative Adversarial Network (DGAN)</strong>
+  <strong>Deblurred Image using Deep Generative Adversarial Network (DeblurGAN)</strong>
 </p>
 
 <p align="center">
   <img width="300" src="Docs/Adaptive_deblur1.png?raw=true">
   <br>
-  <strong>Deblurred Image using Adaptive Kernel Estimation (AKE)</strong>
+  <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
 
 ## Metrics
