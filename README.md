@@ -12,6 +12,13 @@ References:
 1. Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition [arXiv Paper Version](https://arxiv.org/pdf/2102.01026.pdf)
 2. DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks [arXiv Paper Version](https://arxiv.org/pdf/1711.07064.pdf)
 
+Project content: 
+1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
+2. Scientyfic style final report [link]()
+3. **Model trained from scratch by our team**
+
+
+
 
 ## Our results
 <p align="center">
@@ -32,7 +39,7 @@ References:
   <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
 
-## Metrics
+## Our Metrics
 <div align="center">
   
 |                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
@@ -40,10 +47,26 @@ References:
 | **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
 | **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
 
+
 </div>
 
+### Metric evaluation
+Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
+Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+## Tips
 
-  
+1. Ьake sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
+3. The installation procces of CUDA and initiolizing of setup can be a little bit challenging, look for the Nvidia official [guide](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html) how to install CUDA.
+4. We reccomend you to use conda enviroment to setup CUDA+PyTorch setup, you can use PyTorch's [guide](https://pytorch.org/get-started/locally/) to do so. 
+
+## Requirements
+* scikit-image
+* numpy
+* torch==1.4.0
+* torchvision==0.5.0
+* opencv-python
+* CUDA toolkit 11.6
+
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
 
