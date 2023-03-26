@@ -64,9 +64,29 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <strong> Our trained model </strong>
 </p>
 
+
+<div align="center">
+  
+|       Method          | Kohler   | GoPro   | 
+|                       |  PSNR   |   SSIM  | PSNR   | SSIM  |
+| :---                  | :--- | :--- | :--- | :--- | 
+| **PSNR Expected**     | 27.58 | 33.16 | 27.58 | 33.16 |
+| **PSNR Calculated**   | 27.58 | 33.16 | 27.58 | 33.16 |
+
+
+</div>
+
+
+<p align="center">
+  <img width="500" src="Docs/train_pic.png?raw=true">
+  <br>
+  <strong> Our trained model </strong>
+</p>
+
 ### Metric evaluation
 Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
 Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+
 ## Tips
 
 1. make sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
