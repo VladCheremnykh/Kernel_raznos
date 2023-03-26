@@ -45,10 +45,23 @@ Project content:
 | **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
 | **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
 
+
 </div>
 
+## Tips
 
-  
+1. Ьake sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
+3. The installation procces of CUDA and initiolizing of setup can be a little bit challenging, look for the Nvidia official [guide](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html) how to install CUDA.
+4. We reccomend you to use conda enviroment to setup CUDA+PyTorch setup, you can use PyTorch's [guide](https://pytorch.org/get-started/locally/) to do so. 
+
+## Requirements
+* scikit-image
+* numpy
+* torch==1.4.0
+* torchvision==0.5.0
+* opencv-python
+* CUDA toolkit 11.6
+
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
 
