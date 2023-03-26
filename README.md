@@ -15,10 +15,12 @@ References:
 Project content: 
 1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
 2. Scientyfic style final report [link]()
+3. **Model trained from scratch by our team**
+
+
+
+
 ## Our results
-
-
-
 <p align="center">
   <img width="300" src="Docs/Blurry1_1.png?raw=true">
   <br>
@@ -48,6 +50,9 @@ Project content:
 
 </div>
 
+### Metric evaluation
+Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
+Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
 ## Tips
 
 1. Ьake sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
