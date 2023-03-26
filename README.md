@@ -2,7 +2,7 @@
 ### Skoltech ML course project, "tema_raznosa"
 
 This is the page of our course project that is part of Skoltech's Machine Learning course. 
-The main task is implement and benchmark different algorithms for "Image restoration" task i.e. deblurring
+The main task is implement and benchmark different algorithms for "Image restoration" task i.e. deblurring.
 In this repository you can check the results of our study.
 Report.pdf depicts scientific format of our report, while "presentation.pdf" shows our team presentation
 
@@ -14,21 +14,35 @@ References:
 
 
 ## Our results
+<p align="center">
+  <img width="300" src="Docs/Blurry1_1.png?raw=true">
+  <br>
+  <strong>Original Blurry Image</strong>
+</p>
 
+<p align="center">
+  <img width="300" src="Docs/DGAN_deblur1.png?raw=true">
+  <br>
+  <strong>Deblurred Image using Deep Generative Adversarial Network (DeblurGAN)</strong>
+</p>
 
+<p align="center">
+  <img width="300" src="Docs/Adaptive_deblur1.png?raw=true">
+  <br>
+  <strong>Deblurred Image using Adaptive Basis Estimation </strong>
+</p>
 
-## Tables
-
+## Metrics
+<div align="center">
+  
 |                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
 | :---       | :--- | :--- | :--- | :--- | 
 | **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
 | **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
 
+</div>
 
-<p align="center">
-<img size="200" src="Docs/Adaptive_deblur1.png?raw=true">
-  <img size="200" src="Docs/DGAN_deblur1.png?raw=true">
-  </p>
+
   
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
