@@ -11,9 +11,19 @@ In this paper, the authors propose the model of non-uniform motion blur, which
 generalize the  common used uniform model of blurring process. The key idea is to use not one kernel for the whole image, but per-pixel blur kernels. In this project you will deal with blind deblurring problem. Our team is supposed to code and reproduce the results of the authors for Kohler and Gopro datasets with real blur and compare them with DeblurGAN model.
 
 To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9bmbD7OdSE-DOcadRlaeC3xECUwOMFZgw-Q/edit#gid=0)
-### Blured images datasets:
-1. Kohler dataset [link](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
-2. GoPro dataset [link](https://seungjunnah.github.io/Datasets/gopro.html)
+
+## Dataset
+
+### Description
+1. ***The Kohler dataset*** evaluates motion deblurring algorithms using a sequence of sharp images sampled from a six-dimensional camera motion trajectory. It incorporates a non-uniform blur model to simulate real camera motion and can be used to benchmark state-of-the-art algorithms using metrics like PSNR and SSIM.
+2. ***The GoPro dataset*** is a collection of 33 blurry videos captured by a moving camera, alongside corresponding sharp videos, that serves as a benchmark for video deblurring. It contains additional information such as camera parameters, motion metadata, and evaluation metrics to aid the comparison and evaluation of video deblurring algorithms.  
+
+### Download 
+
+* Kohler dataset [Download](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+* GoPro dataset [Download](https://seungjunnah.github.io/Datasets/gopro.html)
+
+## Materials
 
 ### References: 
 1. Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition [arXiv Paper Version](https://arxiv.org/pdf/2102.01026.pdf)
@@ -64,29 +74,24 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 
 <br>
   
-|                       |  PSNR   |   SSIM  | 
-| :---                  | :--- | :--- | 
-| Adaptive expected   | 28.39 | 0.82 | 
-| Adaptive aquired   | 26.86 | 0.80 | 
-| DeblurGAN aquired   | 25.97 | 0.75 | 
+|                       |  Kohler   |   GoPro  | 
+| :---                  | :--- | :---: | 
+| Adaptive expected   | 28.39 (0.82) | NA | 
+| Adaptive aquired   | 26.86 (0.80) | 31.21 (0.91) | 
+| DeblurGAN aquired   | 25.97 (0.75) | 32.12 (0.98) | 
 
-  <strong> Kohler dataset metrics (mean values) </strong>
+<strong> Mean PSNR (SSIM) values for three algorithms </strong>
   <br>
 </div>
 <br>
 <div align="center">
   
-|                       |  PSNR   |   SSIM  | 
-| :---                  | :--- | :--- | 
-| Adaptive expected   | NA | NA | 
-| Adaptive aquired   | 31.21| 0.91 | 
-| DeblurGAN aquired   | 32.12 | 0.98 | 
-  
-  <strong> GoPro dataset metrics (mean values) </strong>
 
   <br>
   
 </div>
+
+We were unable to fully reproduce the results of the scientific article.... our PSNR results were on average 1.5 Db lower than those stated in the authors' article. We tested all the photos of the Kohler dataset, and used a valid metric, using the matlab scripts provided in this dataset. Our assumption is that the results of the article could have been slightly overstated.
 
 ## Training 
 
