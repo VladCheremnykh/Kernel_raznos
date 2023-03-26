@@ -4,15 +4,21 @@
 This is the page of our course project that is part of Skoltech's Machine Learning course. 
 The main task is implement and benchmark different algorithms for "Image restoration" task i.e. deblurring.
 In this repository you can check the results of our study.
-Report.pdf depicts scientific format of our report, while "presentation.pdf" shows our team presentation
+
+### Project goal:
+
+In the considered papers, the authors propose the model of non-uniform motion blur, which generalize the commonly used uniform model of blurring process. The key idea is to use not one kernel for the whole image, but per-pixel blur kernels.
+Authors assert that their approach overcomes the limitations of existing nonuniform motion blur estimation methods and leads to extremely accurate motion
+blur kernels. Our goal is to code and reproduce the results of the authors for Kohler and GoPro datasets
+with real blur and compare them with DeblurGAN model.
 
 To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9bmbD7OdSE-DOcadRlaeC3xECUwOMFZgw-Q/edit#gid=0)
 
-References: 
+### References: 
 1. Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition [arXiv Paper Version](https://arxiv.org/pdf/2102.01026.pdf)
 2. DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks [arXiv Paper Version](https://arxiv.org/pdf/1711.07064.pdf)
 
-Project content: 
+### Project content: 
 1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
 2. Scientific style final report [link](Docs/Final_report.pdf)
 3. **Model trained from scratch by our team**
