@@ -64,24 +64,33 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <strong> Our trained model </strong>
 </p>
 
+<br>
 
 <div align="center">
   
-|       Method          | Kohler   | GoPro   | 
-|                       |  PSNR   |   SSIM  | PSNR   | SSIM  |
-| :---                  | :--- | :--- | :--- | :--- | 
-| **PSNR Expected**     | 27.58 | 33.16 | 27.58 | 33.16 |
-| **PSNR Calculated**   | 27.58 | 33.16 | 27.58 | 33.16 |
+|                       |  PSNR   |   SSIM  | 
+| :---                  | :--- | :--- | 
+| Adaptive expected   | 28.39 | 0.82 | 
+| Adaptive aquired   | 26.86 | 0.80 | 
+| DeblurGAN aquired   | 25.97 | 0.75 | 
 
-
-</div>
-
-
-<p align="center">
-  <img width="500" src="Docs/train_pic.png?raw=true">
+  <strong> Kohler dataset metrics (mean values) </strong>
   <br>
-  <strong> Our trained model </strong>
-</p>
+</div>
+<br>
+<div align="center">
+  
+|                       |  PSNR   |   SSIM  | 
+| :---                  | :--- | :--- | 
+| Adaptive expected   | NA | NA | 
+| Adaptive aquired   | 31.21| 0.91 | 
+| DeblurGAN aquired   | 32.12 | 0.98 | 
+  
+  <strong> GoPro dataset metrics (mean values) </strong>
+
+  <br>
+  
+</div>
 
 ### Metric evaluation
 Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
