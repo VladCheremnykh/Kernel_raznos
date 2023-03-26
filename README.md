@@ -37,7 +37,7 @@ Project content:
   <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
 
-## Metrics
+## Our Metrics
 <div align="center">
   
 |                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
