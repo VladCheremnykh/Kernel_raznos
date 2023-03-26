@@ -12,8 +12,13 @@ References:
 1. Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition [arXiv Paper Version](https://arxiv.org/pdf/2102.01026.pdf)
 2. DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks [arXiv Paper Version](https://arxiv.org/pdf/1711.07064.pdf)
 
-
+Project content: 
+1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
+2. Scientyfic style final report [link]()
 ## Our results
+
+
+
 <p align="center">
   <img width="300" src="Docs/Blurry1_1.png?raw=true">
   <br>
