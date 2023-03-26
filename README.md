@@ -46,27 +46,23 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
 
-## Our Metrics
+
 <div align="center">
   
-|                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
-| :---       | :--- | :--- | :--- | :--- | 
-| **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
-| **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
-
+  |                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
+  | :---       | :--- | :--- | :--- | :--- | 
+  | **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
+  | **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
 
 </div>
 
-
-<p align="center">
-  <img width="500" src="Docs/train_pic.png?raw=true">
-  <br>
-  <strong> Our trained model </strong>
-</p>
-
-<br>
+## Our Metrics
 
 <div align="center">
+  
+
+
+<br>
   
 |                       |  PSNR   |   SSIM  | 
 | :---                  | :--- | :--- | 
@@ -91,6 +87,19 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <br>
   
 </div>
+
+## Training 
+
+
+
+<p align="center">
+  <img width="500" src="Docs/train_pic.png?raw=true">
+  <br>
+  <strong> Our trained model </strong>
+</p>
+
+<br>
+
 
 ### Metric evaluation
 Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
