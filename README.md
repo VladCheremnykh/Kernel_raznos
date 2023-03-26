@@ -30,9 +30,9 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 2. DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks [arXiv Paper Version](https://arxiv.org/pdf/1711.07064.pdf)
 
 ### Project content: 
-1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
-2. Scientific style final report [link](Docs/Final_report.pdf)
-3. **Model trained from scratch by our team**
+1. Our team's final presentation [open](Docs/ML2023_project18.pdf)
+2. Scientific style final report [open](Docs/Final_report.pdf)
+3. **DeblurGAN Model trained from scratch by our team** [check here](DeblurGAN/Model_trained/)
 
 
 
@@ -106,9 +106,9 @@ We were unable to fully reproduce the results of the scientific article.... our 
 <br>
 
 
-### Metric evaluation
-Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
-Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+
+
+# Getting started
 
 ## Tips
 
@@ -124,6 +124,9 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 * opencv-python
 * CUDA toolkit 11.6
 
+## Metric evaluation
+Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
+Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
 
@@ -134,7 +137,7 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 <img width="900" src="Docs/architecture.png?raw=true">
   </p>
   
-## Getting started
+
 
 
 
