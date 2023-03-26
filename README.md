@@ -50,12 +50,19 @@ Project content:
 
 </div>
 
+
+<p align="center">
+  <img width="400" src="Docs/train_pic.png?raw=true">
+  <br>
+  <strong> Our trained model </strong>
+</p>
+
 ### Metric evaluation
 Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
 Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
 ## Tips
 
-1. Ьake sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
+1. make sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
 3. The installation procces of CUDA and initiolizing of setup can be a little bit challenging, look for the Nvidia official [guide](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html) how to install CUDA.
 4. We reccomend you to use conda enviroment to setup CUDA+PyTorch setup, you can use PyTorch's [guide](https://pytorch.org/get-started/locally/) to do so. 
 
