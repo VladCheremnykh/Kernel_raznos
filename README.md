@@ -165,12 +165,6 @@ Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_fac
 ### NonUniform output example 
 
 
-<p align="center">
-  <img src="Docs/pics/Adaptive_deblur2.gif" width="500px"/> 
-  <br>
-  <strong> Kohler input/output </strong>
-  <br>
- </p>
 # DeblurGAN
 DeblurGAN is a neural network for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation. It has newer version "DeblurGANV2", but in this research we decided to used the first one since the repository and guide is more user friendly and easier to follow.
 
