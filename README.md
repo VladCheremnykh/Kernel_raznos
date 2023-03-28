@@ -35,9 +35,9 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 3. **DeblurGAN Model trained from scratch by our team** [check here](DeblurGAN/Model_trained/)
 
 ## Github structure 
-1. **Adaptive_basis_decomposition**: contains deblurred images for Kohler dataset, with different gamma_correction parameter
-2. **DeblurGAN**: contains deblurred images for Kohler and GoPro datasets. Model_trained contains weights of our trained model.
-3. **Docs**: contains final report, reference papers, team presentation and all misc files used in Readme.md (file attached in links)
+1. **Adaptive_basis_decomposition**: deblurred images for Kohler dataset, with different gamma_correction parameter, and .ipynb file with code for calculation of losses
+2. **DeblurGAN**:  deblurred images for Kohler and GoPro datasets. Model_trained contains weights of our trained model.
+3. **Docs**:  final report, reference papers, team presentation and all misc files used in Readme.md (file attached in links)
 4. **Metrics**: .txt format files with PSNR/SSIM metrics for corresponding datasets.
 # Our results
 <p align="center">
