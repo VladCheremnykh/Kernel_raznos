@@ -39,6 +39,7 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 2. **DeblurGAN**:  deblurred images for Kohler and GoPro datasets. Model_trained contains weights of our trained model.
 3. **Docs**:  final report, reference papers, team presentation and all misc files used in Readme.md (file attached in links)
 4. **Metrics**: .txt format files with PSNR/SSIM metrics for corresponding datasets.
+5. **Dataset_generation_script** contains our code to generate syntetic blur
 # Our results
 <p align="center">
   <img width="300" src="Docs/pics/Blurry1_1.png?raw=true">
@@ -161,6 +162,8 @@ python image_deblurring.py -b blurry_img_path --reblur_model model_path --output
 ### Parameters
 Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_factor=2.2`. For Kohler dataset images `gamma_factor=1.0`.
   
+### NonUniform output example 
+
 
 # DeblurGAN
 DeblurGAN is a neural network for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation. It has newer version "DeblurGANV2", but in this research we decided to used the first one since the repository and guide is more user friendly and easier to follow.
