@@ -39,6 +39,7 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 2. **DeblurGAN**:  deblurred images for Kohler and GoPro datasets. Model_trained contains weights of our trained model.
 3. **Docs**:  final report, reference papers, team presentation and all misc files used in Readme.md (file attached in links)
 4. **Metrics**: .txt format files with PSNR/SSIM metrics for corresponding datasets.
+5. **Dataset_generation_script** contains our code to generate syntetic blur
 # Our results
 <p align="center">
   <img width="300" src="Docs/pics/Blurry1_1.png?raw=true">
