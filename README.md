@@ -34,24 +34,26 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 2. Scientific style final report [open](Docs/Final_report.pdf)
 3. **DeblurGAN Model trained from scratch by our team** [check here](DeblurGAN/Model_trained/)
 
-
-
-
-## Our results
+## Github structure 
+1. **Adaptive_basis_decomposition**: contains deblurred images for Kohler dataset, with different gamma_correction parameter
+2. **DeblurGAN**: contains deblurred images for Kohler and GoPro datasets. Model_trained contains weights of our trained model.
+3. **Docs**: contains final report, reference papers, team presentation and all misc files used in Readme.md (file attached in links)
+4. **Metrics**: .txt format files with PSNR/SSIM metrics for corresponding datasets.
+# Our results
 <p align="center">
-  <img width="300" src="Docs/Blurry1_1.png?raw=true">
+  <img width="300" src="Docs/pics/Blurry1_1.png?raw=true">
   <br>
   <strong>Original Blurry Image</strong>
 </p>
 
 <p align="center">
-  <img width="300" src="Docs/DGAN_deblur1.png?raw=true">
+  <img width="300" src="Docs/pics/DGAN_deblur1.png?raw=true">
   <br>
   <strong>Deblurred Image using Deep Generative Adversarial Network (DeblurGAN)</strong>
 </p>
 
 <p align="center">
-  <img width="300" src="Docs/Adaptive_deblur1.png?raw=true">
+  <img width="300" src="Docs/pics/Adaptive_deblur1.png?raw=true">
   <br>
   <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
@@ -93,12 +95,12 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
 
 We were unable to fully reproduce the results of the scientific article.... our PSNR results were on average 1.5 Db lower than those stated in the authors' article. We tested all the photos of the Kohler dataset, and used a valid metric, using the matlab scripts provided in this dataset. Our assumption is that the results of the article could have been slightly overstated.
 
-## Training 
+## DeblurGAN training 
 
 
 
 <p align="center">
-  <img width="500" src="Docs/train_pic.png?raw=true">
+  <img width="500" src="Docs/pics/train_pic.png?raw=true">
   <br>
   <strong> Our trained model </strong>
 </p>
@@ -108,7 +110,7 @@ We were unable to fully reproduce the results of the scientific article.... our 
 
 
 
-# Getting started
+# Getting started localy
 
 ## Tips
 
@@ -134,7 +136,7 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 ## Network Architecture
 
 <p align="center">
-<img width="900" src="Docs/architecture.png?raw=true">
+<img width="900" src="Docs/pics/architecture.png?raw=true">
   </p>
   
 ### Open official repository
@@ -161,7 +163,13 @@ Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_fac
   
 
 # DeblurGAN
-DeblurGAN is a method for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation.
+DeblurGAN is a neural network for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation. It has newer version "DeblurGANV2", but in this research we decided to used the first one since the repository and guide is more user friendly and easier to follow.
+
+<p align="center">
+  <img width="900" src="Docs/pics/DeblurGAN_architecture.png?raw=true">
+  <br>
+  <strong> DeblurGAN architecture </strong>
+</p>
 
 ### Installation
 * Official KupynOrest git reposetory [here](https://github.com/KupynOrest/DeblurGAN)
