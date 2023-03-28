@@ -204,7 +204,7 @@ This network takes blurry image as an input and procude the corresponding sharp 
   <strong> GoPro input/output </strong>
   <br>
   <br>
-  <img src="Docs/pics/DGAN_deblur2.gif" width="350px"/>
+  <img src="Docs/pics/DGAN_deblur3.gif" width="350px"/>
   <br>
   <strong> Kohler input/output </strong>
 </p>
