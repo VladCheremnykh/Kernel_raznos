@@ -165,6 +165,13 @@ Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_fac
 # DeblurGAN
 DeblurGAN is a neural network for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation. It has newer version "DeblurGANV2", but in this research we decided to used the first one since the repository and guide is more user friendly and easier to follow.
 
+This network takes blurry image as an input and procude the corresponding sharp estimate, as in our case:
+<img src="Docs/pics/DGAN_deblur1.gif" width="350px"/> <img src="Docs/pics/Adaptive_deblur2.gif" width="350px"/>
+
+<p align="center">
+  <strong> Kohler and GoPro photo restored by DeblurGAN </strong>
+</p>
+
 <p align="center">
   <img width="900" src="Docs/pics/DeblurGAN_architecture.png?raw=true">
   <br>
@@ -182,3 +189,6 @@ DeblurGAN is a neural network for motion deblurring using a conditional GAN and 
 - python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True
 - [----------FPN101----------]
 - python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True --which_model_netG FPN101
+
+
+
