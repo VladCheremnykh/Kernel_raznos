@@ -11,18 +11,28 @@ In this paper, the authors propose the model of non-uniform motion blur, which
 generalize the  common used uniform model of blurring process. The key idea is to use not one kernel for the whole image, but per-pixel blur kernels. In this project you will deal with blind deblurring problem. Our team is supposed to code and reproduce the results of the authors for Kohler and Gopro datasets with real blur and compare them with DeblurGAN model.
 
 To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9bmbD7OdSE-DOcadRlaeC3xECUwOMFZgw-Q/edit#gid=0)
-### Blured images datasets:
-1. Kohler dataset [link](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
-2. GoPro dataset [link](https://seungjunnah.github.io/Datasets/gopro.html)
+
+## Dataset
+
+### Description
+1. ***The Kohler dataset*** evaluates motion deblurring algorithms using a sequence of sharp images sampled from a six-dimensional camera motion trajectory. It incorporates a non-uniform blur model to simulate real camera motion and can be used to benchmark state-of-the-art algorithms using metrics like PSNR and SSIM.
+2. ***The GoPro dataset*** is a collection of 33 blurry videos captured by a moving camera, alongside corresponding sharp videos, that serves as a benchmark for video deblurring. It contains additional information such as camera parameters, motion metadata, and evaluation metrics to aid the comparison and evaluation of video deblurring algorithms.  
+
+### Download 
+
+* Kohler dataset [Download](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+* GoPro dataset [Download](https://seungjunnah.github.io/Datasets/gopro.html)
+
+## Materials
 
 ### References: 
 1. Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition [arXiv Paper Version](https://arxiv.org/pdf/2102.01026.pdf)
 2. DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks [arXiv Paper Version](https://arxiv.org/pdf/1711.07064.pdf)
 
 ### Project content: 
-1. Our team's final presentation [link](Docs/ML2023_project18.pdf)
-2. Scientific style final report [link](Docs/Final_report.pdf)
-3. **Model trained from scratch by our team**
+1. Our team's final presentation [open](Docs/ML2023_project18.pdf)
+2. Scientific style final report [open](Docs/Final_report.pdf)
+3. **DeblurGAN Model trained from scratch by our team** [check here](DeblurGAN/Model_trained/)
 
 
 
@@ -46,16 +56,45 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <strong>Deblurred Image using Adaptive Basis Estimation </strong>
 </p>
 
-## Our Metrics
+
 <div align="center">
   
-|                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
-| :---       | :--- | :--- | :--- | :--- | 
-| **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
-| **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
-
+  |                   | Blurry   | Hirsch   | DeblurGAN | Adaptive  |
+  | :---       | :--- | :--- | :--- | :--- | 
+  | **PSNR Expected**     | 27.58 | 33.16 | NA    | 35.19 | 
+  | **PSNR Calculated**   | 27.58 | 33.16 | 26.98 | 34.47 | 
 
 </div>
+
+## Our Metrics
+
+<div align="center">
+  
+
+
+<br>
+  
+|                       |  Kohler   |   GoPro  | 
+| :---                  | :--- | :---: | 
+| Adaptive expected   | 28.39 (0.82) | NA | 
+| Adaptive aquired   | 26.86 (0.80) | 31.21 (0.91) | 
+| DeblurGAN aquired   | 25.97 (0.75) | 32.12 (0.98) | 
+
+<strong> Mean PSNR (SSIM) values for three algorithms </strong>
+  <br>
+</div>
+<br>
+<div align="center">
+  
+
+  <br>
+  
+</div>
+
+We were unable to fully reproduce the results of the scientific article.... our PSNR results were on average 1.5 Db lower than those stated in the authors' article. We tested all the photos of the Kohler dataset, and used a valid metric, using the matlab scripts provided in this dataset. Our assumption is that the results of the article could have been slightly overstated.
+
+## Training 
+
 
 
 <p align="center">
@@ -64,9 +103,13 @@ To check our task click [here](https://docs.google.com/spreadsheets/d/1yvhUzqHK9
   <strong> Our trained model </strong>
 </p>
 
-### Metric evaluation
-Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
-Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
+<br>
+
+
+
+
+# Getting started
+
 ## Tips
 
 1. make sure that you have sufficient GPU with at least >4 gb of video memory, our setup had Nvidia gtx 1660(laptop) 6GB. Our recomendation is to use PC descrete GPU with ~12GB of videomemory.
@@ -81,6 +124,9 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 * opencv-python
 * CUDA toolkit 11.6
 
+## Metric evaluation
+Since the Kohler dataset is synthetic blurred with non uniform kernels, standart approaches to calculate PSNR does not show valid results, thus, we use MATLAB instruments to find PSNR and SSIM.
+Here you can check instructions for benchmarking deblur algorithms on [Kohler dataset](https://webdav.tuebingen.mpg.de/pixel/benchmark4camerashake/#Image1_1)
 ## Non-uniform Blur Kernel Estimation via Adaptive Basis Decomposition
 
 
@@ -91,14 +137,9 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 <img width="900" src="Docs/architecture.png?raw=true">
   </p>
   
-## Getting started
+### Open official repository
+* Go to this link, follow the official [guide](https://github.com/GuillermoCarbajal/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition) of installation and testing nn. 
 
-
-
-### Clone Repository
-```
-git clone https://github.com/GuillermoCarbajal/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition
-```
 
 ### Download the pretrained model
 
@@ -116,18 +157,20 @@ python image_deblurring.py -b blurry_img_path --reblur_model model_path --output
 ```
 
 ### Parameters
-Additional options:   
-  `--blurry_images`: may be a singe image path or a .txt with a list of images.
-  
-  `--n_iters`: number of iterations in the RL optimization (default 30)       
-  
-  `--resize_factor`: input image resize factor (default 1)     
-  
-  `--saturation_method`: `'combined'` or `'basic'`. When `'combined'` is passed RL in the presence of saturated pixels is applied. Otherwise,  simple RL update rule is applied in each iteration. For Kohler images, `'basic'` is applied. For RealBlur images `'combined'` is better.
-  
-  `--gamma_factor`: gamma correction factor. By default is assummed `gamma_factor=2.2`. For Kohler dataset images `gamma_factor=1.0`.
+Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_factor=2.2`. For Kohler dataset images `gamma_factor=1.0`.
   
 
 # DeblurGAN
-* official KupynOrest git page [here](https://github.com/KupynOrest/DeblurGAN)
-* useful fork with good readme and instructions [here](https://github.com/fatalfeel/DeblurGAN)
+DeblurGAN is a method for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation.
+
+### Installation
+* Official KupynOrest git reposetory [here](https://github.com/KupynOrest/DeblurGAN)
+* Useful fork with good readme and instructions [here](https://github.com/fatalfeel/DeblurGAN)
+
+### Train
+- python3 ./train.py --dataroot ./data/combined --resize_or_crop crop --display_id -1 --cuda True --which_model_netG FPN101 --gan_type wgan-gp
+
+### Test
+- python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True
+- [----------FPN101----------]
+- python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True --which_model_netG FPN101
