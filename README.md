@@ -186,16 +186,17 @@ This network takes blurry image as an input and procude the corresponding sharp 
 - [----------FPN101----------]
 - python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True --which_model_netG FPN101
 
-### Output example 
-Here you can our restored images by DeblurGAN model
+### DeblurGAN output example 
+
+
 <p align="center">
   <img src="Docs/pics/DGAN_deblur1.gif" width="500px"/> 
   <br>
-  <strong> GoPro image restored by DeblurGAN </strong>
+  <strong> GoPro image restored </strong>
   <br>
   <br>
   <img src="Docs/pics/Adaptive_deblur2.gif" width="350px"/>
   <br>
-  <strong> Kohler image restored by DeblurGAN </strong>
+  <strong> Kohler image restored </strong>
 </p>
 
