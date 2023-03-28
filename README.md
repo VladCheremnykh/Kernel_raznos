@@ -137,14 +137,9 @@ Here you can check instructions for benchmarking deblur algorithms on [Kohler da
 <img width="900" src="Docs/architecture.png?raw=true">
   </p>
   
+### Open official repository
+* Go to this link, follow the official [guide](https://github.com/GuillermoCarbajal/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition) of installation and testing nn. 
 
-
-
-
-### Clone Repository
-```
-git clone https://github.com/GuillermoCarbajal/NonUniformBlurKernelEstimationViaAdaptiveBasisDecomposition
-```
 
 ### Download the pretrained model
 
@@ -162,18 +157,20 @@ python image_deblurring.py -b blurry_img_path --reblur_model model_path --output
 ```
 
 ### Parameters
-Additional options:   
-  `--blurry_images`: may be a singe image path or a .txt with a list of images.
-  
-  `--n_iters`: number of iterations in the RL optimization (default 30)       
-  
-  `--resize_factor`: input image resize factor (default 1)     
-  
-  `--saturation_method`: `'combined'` or `'basic'`. When `'combined'` is passed RL in the presence of saturated pixels is applied. Otherwise,  simple RL update rule is applied in each iteration. For Kohler images, `'basic'` is applied. For RealBlur images `'combined'` is better.
-  
-  `--gamma_factor`: gamma correction factor. By default is assummed `gamma_factor=2.2`. For Kohler dataset images `gamma_factor=1.0`.
+Set `--gamma_factor`: gamma correction factor. By default is assummed `gamma_factor=2.2`. For Kohler dataset images `gamma_factor=1.0`.
   
 
 # DeblurGAN
-* official KupynOrest git page [here](https://github.com/KupynOrest/DeblurGAN)
-* useful fork with good readme and instructions [here](https://github.com/fatalfeel/DeblurGAN)
+DeblurGAN is a method for motion deblurring using a conditional GAN and content loss for learning. It achieves state-of-the-art performance in both structural similarity measure and visual appearance. The method also introduces a approach to generating synthetic motion blurred images from sharp ones, allowing for realistic dataset augmentation.
+
+### Installation
+* Official KupynOrest git reposetory [here](https://github.com/KupynOrest/DeblurGAN)
+* Useful fork with good readme and instructions [here](https://github.com/fatalfeel/DeblurGAN)
+
+### Train
+- python3 ./train.py --dataroot ./data/combined --resize_or_crop crop --display_id -1 --cuda True --which_model_netG FPN101 --gan_type wgan-gp
+
+### Test
+- python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True
+- [----------FPN101----------]
+- python3 ./test.py --dataroot ./data/blurred --model test --dataset_mode single --cuda True --which_model_netG FPN101
